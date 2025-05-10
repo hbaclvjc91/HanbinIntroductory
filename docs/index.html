@@ -1,0 +1,31 @@
+<html>
+   <head>Mathwork Hanbin's Intro</head>
+   <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"></script>
+   <script src="./script.js"></script>
+   <link rel="stylesheet" href="./style.css">
+   <body>
+      <div class="container">
+         <section id="intro">
+         </section>
+      </div>
+      <script>
+        fetch("https://ipapi.co/json/")
+          .then(response => response.json())
+          .then(data => {
+            console.log("IP-based Location:");
+            console.log(`IP: ${data.ip}`);
+            console.log(`City: ${data.city}`);
+            console.log(`Region: ${data.region}`);
+            console.log(`Country: ${data.country_name}`);
+            console.log(`Latitude: ${data.latitude}`);
+            console.log(`Longitude: ${data.longitude}`);
+          })
+          .catch(error => {
+            console.error("Error fetching IP-based location:", error);
+          });
+      </script>
+   </body>
+</html>
