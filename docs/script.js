@@ -63,11 +63,15 @@ $(document).ready(function() {
          $('#img3').addClass('show');
          $('#img4').removeClass('show');
          $('#img5').removeClass('show');
+        $('#img6').removeClass('show');
         $('.content[data-id="second"] h2 span').text("went to University of Toronto.");
 
+        $('.timeline').show();
         $('.timeline ul li').removeClass('show');
         $('.content[data-id="third"] h2').text("Hanbin's work experience.");
         $('.content[data-id="fifth"] h2').text("What my colleagues said about me");
+        $('#project1').removeClass('show');
+        $('#project2').removeClass('show');
 
 
         $("#value1").removeClass('show');
@@ -79,11 +83,11 @@ $(document).ready(function() {
         $("#recog3").removeClass('show');
         $("#recog4").removeClass('show');
 
-
         currentIndex = 0;
         second_counter=1;
         third_counter=0;
         fourth_counter=0;
+        fourth_project_counter=1;
         fifth_counter=0;
         
         const target = $(this).data("id");
@@ -92,6 +96,7 @@ $(document).ready(function() {
     });
 
 
+    /* Slide1: About me */
     $('.image-sequence').on('click', function() {
         console.log("clicked")
         $('#img2').addClass('show');
@@ -100,24 +105,34 @@ $(document).ready(function() {
         });
     });
 
+    /* Slide2: Education */
     let second_counter=1;
     $('.content[data-id="second"]').on('click', function() {
       second_counter++;
       if(second_counter === 2){
          $('.content[data-id="second"] h2 span').fadeOut(300, function() {
-            $(this).text('first studied computer science.').fadeIn(300);
+            $(this).text('first studied computer science focused on web development.').fadeIn(300);
         });
         $('#img3').removeClass('show');
         $('#img4').addClass('show');
       }
       else if(second_counter === 3){
          $('.content[data-id="second"] h2 span').fadeOut(300, function() {
+            $(this).text(' also has many expereince with MATLAB from courses.').fadeIn(300);
+        });
+        $('#img4').removeClass('show');
+        $('#img6').addClass('show');
+      }
+      else if(second_counter === 4){
+         $('.content[data-id="second"] h2 span').fadeOut(300, function() {
             $(this).text('then studied design.').fadeIn(300);
         });
+        $('#img6').removeClass('show');
         $('#img5').addClass('show');
       }
     });
 
+    /* Slide3: Work Experience*/
     let third_counter=0;
      $('.content[data-id="third"]').on('click', function(){
       console.log("third slide clicked")
@@ -155,6 +170,35 @@ $(document).ready(function() {
 
      });
 
+     let fourth_project_counter = 1;
+     $('#work5').on('click', function(){
+        $('.project_view').addClass('show');
+        $('.timeline').hide();
+        $("#work1").removeClass("show");
+        $("#work2").removeClass("show");
+        $("#work3").removeClass("show");
+        $("#work4").removeClass("show");
+        $("#work5").removeClass("show");
+
+        $('#project1').addClass('show');
+          $('.content[data-id="third"] h2').fadeOut(300, function() {
+          $(this).text('Project 1. Customer Success in PX Cloud').fadeIn(300);
+        });
+     })
+
+      $('.project_view').on('click', function(){
+        fourth_project_counter++;
+        if(fourth_project_counter === 2){
+          $('#project1').removeClass('show');
+          $('#project2').addClass('show');
+           $('.content[data-id="third"] h2').fadeOut(300, function() {
+            $(this).text('Project 2. Global Search 2.0').fadeIn(300);
+          });
+        }
+      })
+
+
+     /* Slide4: Why Mathworks*/
     let fourth_counter=0;
     $('.content[data-id="fourth"]').on('click', function(){
       fourth_counter++
@@ -170,6 +214,7 @@ $(document).ready(function() {
 
     })
 
+    /* Slide5: Why Me*/
     let fifth_counter=0;
     $('.content[data-id="fifth"]').on('click', function(){
       fifth_counter++
