@@ -67,15 +67,24 @@ $(document).ready(function() {
 
         $('.timeline ul li').removeClass('show');
         $('.content[data-id="third"] h2').text("Hanbin's work experience.");
-        
+        $('.content[data-id="fifth"] h2').text("What my colleagues said about me");
+
+
         $("#value1").removeClass('show');
         $("#value2").removeClass('show');
         $("#value3").removeClass('show');
+
+        $("#recog1").removeClass('show');
+        $("#recog2").removeClass('show');
+        $("#recog3").removeClass('show');
+        $("#recog4").removeClass('show');
+
 
         currentIndex = 0;
         second_counter=1;
         third_counter=0;
         fourth_counter=0;
+        fifth_counter=0;
         
         const target = $(this).data("id");
         $(".content").hide();
