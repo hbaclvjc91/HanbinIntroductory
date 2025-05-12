@@ -118,7 +118,7 @@ $(document).ready(function() {
       }
       else if(second_counter === 3){
          $('.content[data-id="second"] h2 span').fadeOut(300, function() {
-            $(this).text(' also has many expereince with MATLAB from courses.').fadeIn(300);
+            $(this).text(' also has much expereince with MATLAB from courses.').fadeIn(300);
         });
         $('#img4').removeClass('show');
         $('#img6').addClass('show');
