@@ -41,5 +41,34 @@ $(document).ready(function () {
   });
 
   $('.lists .item').first().addClass('selected');
+  $(".content").hide().first().show(); // show first content block
+
+      let currentIndex = 0;
+
+  $(".lists .item").click(function () {
+
+    $('.lists .item').removeClass('selected');
+    $(this).addClass('selected');
+
+    // Reset image sequence
+    $('.seq-img').removeClass('show');
+    currentIndex = 0;
+
+    const target = $(this).data("id");
+    $(".content").hide();
+    $(`.content[data-id="${target}"]`).fadeIn();
+  });
+
+
+ $('.image-sequence').on('click', function () {
+  console.log("clicked")
+  currentIndex++;
+  if (currentIndex === 1) {
+    $('#img1').addClass('show');
+  } else if (currentIndex === 2) {
+    $('#img2').addClass('show');
+  }
+});
+
 
 });

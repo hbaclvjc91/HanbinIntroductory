@@ -180,7 +180,7 @@ h1 {
 }
 
 h2 {
-	font-size: 1.5rem;
+	font-size: 2.5rem;
 	font-weight: 300;
 	margin: 0;
 }
@@ -199,12 +199,7 @@ h2 {
 	border-radius: 4px;
 }
 
-#page1 h1 {
-	color: #888;
-	position: absolute;
-	left: 2rem;
-	bottom: 2rem;
-}
+
 
 #intro {
 	background-color: rgb(242, 242, 242);
@@ -222,7 +217,10 @@ h2 {
 	  flex: 1;
 }
 .slides.two-col-section #content_block{
-	background-color: #1d1d1d;
+	background-color: #111;
+	display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .lists{
 	display: flex;
@@ -288,5 +286,60 @@ h2 {
 }
 
 .content{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	color: #fff;
+	width: 100%;
+	height: 100%;
+}
+
+.content h2 {
+	color: #fdfdfd;
+}
+
+.content[data-id="intro"] h2{
+	position: absolute;
+	bottom: 1.5rem;
+	left: 1.5rem;
+}
+.image-sequence {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.seq-img {
+  position: absolute;
+  max-width: 450px;
+  max-height: 450px;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+  border-radius: 6px;
+  pointer-events: none;
+}
+
+.seq-img.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* First image: centered */
+.seq-img.img1 {
+  z-index: 1;
+  transform: translate(-60px, 0);
+}
+
+/* Second image: top-right offset */
+.seq-img.img2 {
+  z-index: 2;
+  transform: translate(60px, -60px);
 }
