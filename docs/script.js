@@ -33,11 +33,13 @@ $(document).ready(function () {
     $("section").first().show().addClass("active");
   
     // Navigation click handler
-    $("nav a").on("click", function (e) {
+    $("a").on("click", function (e) {
       e.preventDefault();
       const targetID = $(this).attr("href");
       showSection(targetID);
     });
   });
+
+  $('.lists .item').first().addClass('selected');
 
 });
