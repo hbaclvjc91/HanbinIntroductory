@@ -152,11 +152,48 @@ $(document).ready(function() {
       if(fourth_counter === 1){
         $("#value1").addClass("show");
       }
-      if(fourth_counter === 2){
+      else if(fourth_counter === 2){
         $("#value2").addClass("show");
       }
-      if(fourth_counter === 3){
+      else if(fourth_counter === 3){
         $("#value3").addClass("show");
+      }
+
+    })
+
+    let fifth_counter=0;
+    $('.content[data-id="fifth"]').on('click', function(){
+      fifth_counter++
+      if(fifth_counter === 1){
+        $("#recog1").addClass("show");
+         $('.content[data-id="fifth"] h2').fadeOut(300, function() {
+         $(this).text('Strong problem solver').fadeIn(300);
+        });
+      }
+      if(fifth_counter === 2){
+        $("#recog1").removeClass("show");
+        $("#recog2").addClass("show");
+         $('.content[data-id="fifth"] h2').fadeOut(300, function() {
+         $(this).text('Great collaborator').fadeIn(300);
+        });
+
+      }
+      if(fifth_counter === 3){
+        $("#recog1").removeClass("show");
+        $("#recog2").removeClass("show");
+        $("#recog3").addClass("show");
+         $('.content[data-id="fifth"] h2').fadeOut(300, function() {
+         $(this).text('Deatil oriented and builder').fadeIn(300);
+        });
+      }
+       if(fifth_counter === 4){
+        $("#recog1").removeClass("show");
+        $("#recog2").removeClass("show");
+        $("#recog3").removeClass("show");
+        $("#recog4").addClass("show");
+         $('.content[data-id="fifth"] h2').fadeOut(300, function() {
+         $(this).text('Growth focused designer').fadeIn(300);
+        });
       }
 
     })
