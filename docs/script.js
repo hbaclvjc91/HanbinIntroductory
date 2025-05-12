@@ -65,10 +65,17 @@ $(document).ready(function() {
          $('#img5').removeClass('show');
         $('.content[data-id="second"] h2 span').text("went to University of Toronto.");
 
+        $('.timeline ul li').removeClass('show');
+        $('.content[data-id="third"] h2').text("Hanbin's work experience.");
         
+        $("#value1").removeClass('show');
+        $("#value2").removeClass('show');
+        $("#value3").removeClass('show');
+
         currentIndex = 0;
         second_counter=1;
-
+        third_counter=0;
+        fourth_counter=0;
         
         const target = $(this).data("id");
         $(".content").hide();
@@ -94,13 +101,66 @@ $(document).ready(function() {
         $('#img3').removeClass('show');
         $('#img4').addClass('show');
       }
-      if(second_counter === 3){
+      else if(second_counter === 3){
          $('.content[data-id="second"] h2 span').fadeOut(300, function() {
             $(this).text('then studied design.').fadeIn(300);
         });
         $('#img5').addClass('show');
       }
     });
+
+    let third_counter=0;
+     $('.content[data-id="third"]').on('click', function(){
+      console.log("third slide clicked")
+      third_counter++
+      if(third_counter === 1){
+        $("#work1").addClass("show");
+         $('.content[data-id="third"] h2').fadeOut(300, function() {
+            $(this).text('Went to Cvent for first product design internship.').fadeIn(300);
+        });
+      }
+      if(third_counter === 2){
+        $("#work2").addClass("show");
+         $('.content[data-id="third"] h2').fadeOut(300, function() {
+            $(this).text('Then went to do second product design internship at FreshBooks').fadeIn(300);
+        });
+      }
+      else if(third_counter === 3){
+        $("#work3").addClass("show");
+        $('.content[data-id="third"] h2').fadeOut(300, function() {
+            $(this).text('Did a brief contract work as a UX Developer before graduating').fadeIn(300);
+        });
+      }
+      else if(third_counter === 4){
+        $("#work4").addClass("show");
+         $('.content[data-id="third"] h2').fadeOut(300, function() {
+            $(this).text('First full time product design position at Slync.io').fadeIn(300);
+        });
+      }
+      else if(third_counter === 5){
+        $("#work5").addClass("show");
+        $('.content[data-id="third"] h2').fadeOut(300, function() {
+            $(this).text('Then most recently at Cisco').fadeIn(300);
+        });
+      }
+
+     });
+
+    let fourth_counter=0;
+    $('.content[data-id="fourth"]').on('click', function(){
+      fourth_counter++
+      if(fourth_counter === 1){
+        $("#value1").addClass("show");
+      }
+      if(fourth_counter === 2){
+        $("#value2").addClass("show");
+      }
+      if(fourth_counter === 3){
+        $("#value3").addClass("show");
+      }
+
+    })
+
 
 
 });

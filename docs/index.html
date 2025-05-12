@@ -1,16 +1,14 @@
 <html>
-  <title>Mathwork Hanbin's Intro</title>
-  <script
-    src="https://code.jquery.com/jquery-3.7.1.min.js"
-    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/motion@latest/dist/motion.js"></script>
-  <script src="./script.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css">
-  <body>
+<title>Mathwork Hanbin's Intro</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/motion@latest/dist/motion.js"></script>
+<script src="./script.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+
+<body>
     <!--
       <nav id="cd-vertical-nav">
          <ul>
@@ -29,121 +27,166 @@
          </ul>
       </nav>-->
     <div class="container">
-      <section id="intro" class="slides">
-        <div class="header">
-          <h1 class="dark">Hanbin's Presentation</h1>
-          <h2>Built and designed by Hanbin Chang</h2>
-          <a class="link_button" href="#page1">Let's Explore</a>
-        </div>
-        <img class="image-holder" src="./img/personal_image.png"/>
-      </section>
-      <section id="page1" class="slides two-col-section">
-        <!--<h1>Intro</h1>-->
-        <div id="content_block" class="col">
-          <div class="content" data-id="intro">
-            <div class="image-sequence" id="intro-sequence">
-              <img src="./img/korea.png" class="seq-img img1" id="img1"/>
-              <img src="./img/toronto.png" class="seq-img img2" id="img2" />
+        <section id="intro" class="slides">
+            <div class="header">
+                <h1 class="dark">Hanbin's Presentation</h1>
+                <h2>Built and designed by Hanbin Chang</h2>
+                <a class="link_button" href="#page1">Let's Explore</a>
             </div>
-            <h2>Hanbin <span>was born in Korea</span></h2>
-          </div>
-          <div class="content" data-id="second">
-            <img src="./img/uoft.png" class="seq-img img1 show" id="img3"/>
-            <img src="./img/cs_degree.png" class="skill-img img2" id="img4"/>
-            <img src="./img/design_degree.png" class="skill-img img3" id="img5"/>
-            <h2>Hanbin <span>went to University of Toronto. </span></h2>
-          </div>
-          <div class="content" data-id="third">
-            <div class="timeline">
-              <ul>
-                <li class="show">
-                  <div class="timeline-content">
-                    <h3 class="date">May - Aug 2019</h3>
-                    <img src="./img/cvent.png">
-                    <h1>Product Design Intern</h1>
-                    <p></p>
-                  </div>
-                </li>
-                 <li>
-                  <div class="timeline-content">
-                    <h3 class="date">Sep - Dec 2019</h3>
-                     <img src="./img/freshbooks.png">
-                    <h1>Product Design Intern</h1>
-                    <p></p>
-                  </div>
-                </li>
-                 <li>
-                  <div class="timeline-content">
-                    <h3 class="date">Jan - Apr 2020</h3>
-                    <img src="./img/tangent.png">
-                    <h1>UX Developer at Tangent Animation</h1>
-                    <p></p>
-                  </div>
-                </li>
-                 <li>
-                  <div class="timeline-content">
-                    <h3 class="date">Jan - Oct 2021</h3>
-                     <img src="./img/slync.png">
-                    <h1>Product Designer at Slync.io</h1>
-                    <p></p>
-                  </div>
-                </li>
-                 <li>
-                  <div class="timeline-content">
-                    <h3 class="date">Jan 2022 - Oct 2024</h3>
-                     <img src="./img/cisco.png">
-                    <h1>Product Designer at Cisco</h1>
-                    <p></p>
-                  </div>
-                </li>
-              </ul>
+            <img class="image-holder" src="./img/personal_image.png" />
+        </section>
+        <section id="page1" class="slides two-col-section">
+            <!--<h1>Intro</h1>-->
+            <div id="content_block" class="col">
+                <div class="content" data-id="intro">
+                    <div class="image-sequence" id="intro-sequence">
+                        <img src="./img/korea.png" class="seq-img img1" id="img1" />
+                        <img src="./img/toronto.png" class="seq-img img2" id="img2" />
+                    </div>
+                    <h2>Hanbin <span>was born in Korea</span></h2>
+                </div>
+                <div class="content" data-id="second">
+                    <img src="./img/uoft.png" class="seq-img img1 show" id="img3" />
+                    <img src="./img/cs_degree.png" class="skill-img img2" id="img4" />
+                    <img src="./img/design_degree.png" class="skill-img img3" id="img5" />
+                    <h2>Hanbin <span>went to University of Toronto. </span></h2>
+                </div>
+                <div class="content" data-id="third">
+                    <div class="timeline">
+                        <ul>
+                            <li id="work1">
+                                <div class="timeline-content">
+                                    <h3 class="date">May - Aug 2019</h3>
+                                    <img src="./img/cvent.png">
+                                    <h1>Product Design Intern</h1>
+                                    <p></p>
+                                </div>
+                            </li>
+                            <li id="work2">
+                                <div class="timeline-content">
+                                    <h3 class="date">Sep - Dec 2019</h3>
+                                    <img src="./img/freshbooks.png">
+                                    <h1>Product Design Intern</h1>
+                                    <p></p>
+                                </div>
+                            </li>
+                            <li id="work3">
+                                <div class="timeline-content">
+                                    <h3 class="date">Jan - Apr 2020</h3>
+                                    <img src="./img/tangent.png">
+                                    <h1>UX Developer</h1>
+                                    <p></p>
+                                </div>
+                            </li>
+                            <li id="work4">
+                                <div class="timeline-content">
+                                    <h3 class="date">Jan - Oct 2021</h3>
+                                    <img src="./img/slync.png">
+                                    <h1>Product Designer at Slync.io</h1>
+                                    <p></p>
+                                </div>
+                            </li>
+                            <li id="work5">
+                                <div class="timeline-content">
+                                    <h3 class="date">Jan 2022 - Oct 2024</h3>
+                                    <img src="./img/cisco.png">
+                                    <h1>Product Designer at Cisco</h1>
+                                    <p></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <h2>Hanbin's work experience.</h2>
+                </div>
+                <div class="content" data-id="fourth">
+                    <!--
+            <div class="content_block">
+               <p>✅ Empowering engineers</p>
+               <p>✅ Continuous growth</p>
+               <p>✅ Long-term thinking</p>
+            </div>-->
+                    <div class="venn-container">
+                        <div class="circle left" id="value1">
+                            <strong>My Strengths:</strong>
+                            <ul>
+                                <li>UX for complex systems</li>
+                                <li>Strong end-to-end desgin experience</li>
+                                <li>Cross-functional team leadership</li>
+                                <li>CS background + front-end dev skills</li>
+                            </ul>
+                        </div>
+                        <div class="circle right" id="value2">
+                            <strong>MathWorks Needs:</strong>
+                            <ul>
+                                <li>UX for engineers & scientists</li>
+                                <li>Clarity and rigor in design</li>
+                                <li>Collaboration across disciplines</li>
+                                <li>Growth mindset</li>
+                                <li>AI/ML integration</li>
+                            </ul>
+                        </div>
+                        <div class="center" id="value3">
+                            <strong>Strong alignment</strong>
+                            <ul style="text-align: left; padding-left: 1em;">
+                                <li>Designing for technical users</li>
+                                <li>Empathy for engineers</li>
+                                <li>Principled design craft</li>
+                                <li>Curiosity & continuous learning</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h2>Shared alignment and interests</h2>
+                </div>
+                <div class="content" data-id="fifth">fifth content...</div>
             </div>
-          </div>
-          <div class="content" data-id="fourth">fourth content...</div>
-          <div class="content" data-id="fifth">fifth content...</div>
-        </div>
-        <div class="col">
-          <ul class="lists">
-            <li class="item" data-id="intro">
-              <p class="title">1. About me</p>
-              <p class="description">Brief info about me</p>
-            </li>
-            <li class="item" data-id="second">
-              <p class="title">2. Education</p>
-              <p class="description">What I studied and how my education background led me to design</p>
-            </li>
-            <li class="item" data-id="third">
-              <p class="title">3. Work Experience</p>
-              <p class="description">Where I worked for past 5 years</p>
-            </li>
-            <li class="item" data-id="fourth">
-              <p class="title">4. Why MathWorks</p>
-              <p class="description">Why I am interested in MathWorks</p>
-            </li>
-            <li class="item" data-id="fifth">
-              <p class="title">5. Why Me</p>
-              <p class="description">What makes me unique for this role</p>
-            </li>
-            <a class="link_button" href="#intro">Back to Home</a>
-          </ul>
-        </div>
-      </section>
+            <div class="col">
+                <ul class="lists">
+                    <li class="item" data-id="intro">
+                        <p class="title">1. About me</p>
+                        <p class="description">Brief info about me</p>
+                    </li>
+                    <li class="item" data-id="second">
+                        <p class="title">2. Education</p>
+                        <p class="description">What I studied and how my education background led me to design</p>
+                    </li>
+                    <li class="item" data-id="third">
+                        <p class="title">3. Work Experience</p>
+                        <p class="description">Where I worked for past 5 years</p>
+                    </li>
+                    <li class="item" data-id="fourth">
+                        <p class="title">4. Why MathWorks</p>
+                        <p class="description">Why I am interested in MathWorks and UX Design role</p>
+                    </li>
+                    <li class="item" data-id="fifth">
+                        <p class="title">5. Why Me</p>
+                        <p class="description">What makes me unique for this role</p>
+                    </li>
+                    <a class="link_button" href="#intro">Back to Home</a>
+                </ul>
+            </div>
+        </section>
     </div>
     <script>
-      fetch("https://ipapi.co/json/")
-        .then(response => response.json())
-        .then(data => {
-          console.log("IP-based Location:");
-          console.log(`IP: ${data.ip}`);
-          console.log(`City: ${data.city}`);
-          console.log(`Region: ${data.region}`);
-          console.log(`Country: ${data.country_name}`);
-          console.log(`Latitude: ${data.latitude}`);
-          console.log(`Longitude: ${data.longitude}`);
-        })
-        .catch(error => {
-          console.error("Error fetching IP-based location:", error);
-        });
+        fetch("https://ipapi.co/json/")
+            .then(response => response.json())
+            .then(data => {
+              console.log("IP-based Location:");
+              console.log(`IP: ${data.ip}`);
+              console.log(`City: ${data.city}`);
+              console.log(`Region: ${data.region}`);
+              console.log(`Country: ${data.country_name}`);
+              console.log(`Latitude: ${data.latitude}`);
+              console.log(`Longitude: ${data.longitude}`);
+            })
+            .catch(error => {
+              console.error("Error fetching IP-based location:", error);
+            });
     </script>
-  </body>
+    <script>
+        function toggleVisibility(el) {
+             el.classList.toggle('active');
+          }
+    </script>
+</body>
+
 </html>
