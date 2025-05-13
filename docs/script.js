@@ -125,7 +125,7 @@ $(document).ready(function() {
       }
       else if(second_counter === 4){
          $('.content[data-id="second"] h2 span').fadeOut(300, function() {
-            $(this).text('then studied design.').fadeIn(300);
+            $(this).text('then transitioned to UX.').fadeIn(300);
         });
         $('#img6').removeClass('show');
         $('#img5').addClass('show');
